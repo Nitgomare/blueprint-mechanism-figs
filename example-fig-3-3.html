@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>图 3-3 铰链四杆机构 · 白纸蓝图</title>
+<style>
+  :root{
+    --mono:"JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace;
+    --zh:"Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#EDEFF3;color:#16202E}
+  body{padding:28px 20px 48px;display:flex;justify-content:center}
+  .wrap{width:min(1000px,100%)}
+  .stage{position:relative;width:100%;aspect-ratio:1000/750;background:#F7F8FA;border:1px solid rgba(28,64,112,.22);border-radius:2px;overflow:hidden;cursor:grab;outline:none;user-select:none;-webkit-user-select:none;touch-action:pan-y;box-shadow:0 1px 2px rgba(20,40,70,.06),0 12px 28px -18px rgba(20,40,70,.35)}
+  .stage:active{cursor:grabbing}
+  .stage:focus:not(:focus-visible){box-shadow:none}
+  .stage:focus-visible{box-shadow:inset 0 0 0 1.5px rgba(29,91,214,.6)}
+  .stage svg{display:block;width:100%;height:100%}
+  #crank,#link,#rocker,#rod{filter:drop-shadow(0 1px 1.2px rgba(20,40,70,.18))}
+  .cap{margin-top:13px;font-family:var(--zh);font-size:13px;line-height:1.75;color:#5A6B80;letter-spacing:.01em}
+  .cap b{color:#16202E;font-weight:600}
+  @media (max-width:720px){
+    body{padding:14px 10px 26px}
+    .cap{font-size:12px;line-height:1.65}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="stage" data-stage tabindex="0" role="slider" aria-label="图 3-3 铰链四杆机构 · 白纸蓝图：拖动或方向键转动曲柄" aria-valuemin="0" aria-valuemax="360" aria-valuenow="150">
+    <svg viewBox="0 0 1000 750" role="img" aria-label="图 3-3 铰链四杆机构 · 白纸蓝图">
+      
+<defs>
+  <pattern id="gm" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#254878" stroke-opacity="0.075" stroke-width="1"/>
+  </pattern>
+  <pattern id="gM" width="200" height="200" patternUnits="userSpaceOnUse">
+    <rect width="200" height="200" fill="url(#gm)"/>
+    <path d="M200 0H0V200" fill="none" stroke="#254878" stroke-opacity="0.15" stroke-width="1.1"/>
+  </pattern>
+</defs>
+<rect width="1000" height="750" fill="#F7F8FA"/>
+<rect width="1000" height="750" fill="url(#gM)"/>
+
+<rect x="16" y="16" width="968" height="718" fill="none" stroke="#254878" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="23" y="23" width="954" height="704" fill="none" stroke="#254878" stroke-opacity="0.28" stroke-width="1"/>
+<path d="M16 52h9M16 698h9M975 52h9M975 698h9" stroke="#254878" stroke-opacity="0.5" stroke-width="1.1"/>
+<path d="M52 16v9M948 16v9M52 734v-9M948 734v-9" stroke="#254878" stroke-opacity="0.5" stroke-width="1.1"/>
+
+<text x="56" y="52" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A" letter-spacing="0.24em">FIG. 3-3</text>
+<text x="56" y="88" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="26" font-weight="600" fill="#16202E" letter-spacing="0.06em">铰链四杆机构</text>
+<text x="56" y="111" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#6E819A" letter-spacing="0.2em">HINGED FOUR-BAR · 曲柄摇杆</text>
+<text x="944" y="52" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A" letter-spacing="0.24em">REV. A · 1 : 1</text>
+<line x1="175" y1="500" x2="465" y2="500" stroke="#8794A6" stroke-width="2.2" stroke-dasharray="7 5"/>
+<circle cx="175" cy="500" r="130.50" fill="none" stroke="#1D5BD6" stroke-width="1.1" stroke-opacity="0.32" stroke-dasharray="2 7"/>
+<path d="M605.42 261.23A277 277 0 0 0 273.02 300.31" fill="none" stroke="#A9B7C7" stroke-width="1"/>
+<path d="M601.87 267.27A270 270 0 0 0 277.88 305.36" fill="none" stroke="#A9B7C7" stroke-width="1" stroke-opacity="0.55"/>
+<line x1="603.50" y1="260.11" x2="600.00" y2="266.17" stroke="#6E819A" stroke-width="1.3"/><line x1="582.07" y1="248.95" x2="580.54" y2="252.22" stroke="#A9B7C7" stroke-width="0.9"/><line x1="559.74" y1="239.71" x2="558.51" y2="243.09" stroke="#A9B7C7" stroke-width="0.9"/><line x1="536.69" y1="232.44" x2="534.88" y2="239.20" stroke="#6E819A" stroke-width="1.3"/><line x1="513.10" y1="227.21" x2="512.48" y2="230.75" stroke="#A9B7C7" stroke-width="0.9"/><line x1="489.14" y1="224.05" x2="488.83" y2="227.64" stroke="#A9B7C7" stroke-width="0.9"/><line x1="465.00" y1="223.00" x2="465.00" y2="230.00" stroke="#6E819A" stroke-width="1.3"/><line x1="440.86" y1="224.05" x2="441.17" y2="227.64" stroke="#A9B7C7" stroke-width="0.9"/><line x1="416.90" y1="227.21" x2="417.52" y2="230.75" stroke="#A9B7C7" stroke-width="0.9"/><line x1="393.31" y1="232.44" x2="395.12" y2="239.20" stroke="#6E819A" stroke-width="1.3"/><line x1="370.26" y1="239.71" x2="371.49" y2="243.09" stroke="#A9B7C7" stroke-width="0.9"/><line x1="347.93" y1="248.95" x2="349.46" y2="252.22" stroke="#A9B7C7" stroke-width="0.9"/><line x1="326.50" y1="260.11" x2="330.00" y2="266.17" stroke="#6E819A" stroke-width="1.3"/><line x1="306.12" y1="273.09" x2="308.18" y2="276.04" stroke="#A9B7C7" stroke-width="0.9"/><line x1="286.95" y1="287.81" x2="289.26" y2="290.56" stroke="#A9B7C7" stroke-width="0.9"/><line x1="605.42" y1="261.23" x2="603.40" y2="264.68" stroke="#41546B" stroke-width="2.6"/><line x1="273.02" y1="300.31" x2="275.80" y2="303.20" stroke="#41546B" stroke-width="2.6"/>
+<text x="427.75" y="183.18" text-anchor="middle" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A">ψ 74.3°</text>
+
+<g>
+  <path d="M161 515 L175 512 L189 515" stroke="#41546B" stroke-width="1.7" fill="none" stroke-opacity="0.8"/>
+  <path d="M163 517 L175 548 L187 517 Z" fill="#41546B" fill-opacity="0.06" stroke="#41546B" stroke-width="1.4" stroke-opacity="0.75"/>
+  <line x1="155" y1="548" x2="195" y2="548" stroke="#41546B" stroke-width="1.5" stroke-opacity="0.75"/>
+  <line x1="158" y1="548" x2="153" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="167" y1="548" x2="162" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="176" y1="548" x2="171" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="185" y1="548" x2="180" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="194" y1="548" x2="189" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/>
+</g>
+
+<g>
+  <path d="M451 515 L465 512 L479 515" stroke="#41546B" stroke-width="1.7" fill="none" stroke-opacity="0.8"/>
+  <path d="M453 517 L465 548 L477 517 Z" fill="#41546B" fill-opacity="0.06" stroke="#41546B" stroke-width="1.4" stroke-opacity="0.75"/>
+  <line x1="445" y1="548" x2="485" y2="548" stroke="#41546B" stroke-width="1.5" stroke-opacity="0.75"/>
+  <line x1="448" y1="548" x2="443" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="457" y1="548" x2="452" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="466" y1="548" x2="461" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="475" y1="548" x2="470" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/><line x1="484" y1="548" x2="479" y2="557" stroke="#41546B" stroke-width="1.1" stroke-opacity="0.5"/>
+</g>
+
+<line id="linkU" x1="0" y1="0" x2="0" y2="0" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+<line id="link" x1="0" y1="0" x2="0" y2="0" stroke="#16202E" stroke-width="6.5" stroke-linecap="round"/>
+
+<line id="rockerU" x1="0" y1="0" x2="0" y2="0" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+<line id="rocker" x1="0" y1="0" x2="0" y2="0" stroke="#16202E" stroke-width="6.5" stroke-linecap="round"/>
+
+<line id="crankU" x1="0" y1="0" x2="0" y2="0" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+<line id="crank" x1="0" y1="0" x2="0" y2="0" stroke="#1D5BD6" stroke-width="6.5" stroke-linecap="round"/>
+
+<g id="pinA" transform="translate(175.0 500.0)">
+  <circle r="12.5" fill="#FFFFFF"/>
+  <circle r="8" fill="#FFFFFF" stroke="#16202E" stroke-width="2.2"/>
+  <circle r="2.4" fill="#16202E"/>
+  <path d="M-16 0h32M0 -16v32" stroke="#16202E" stroke-width="0.8" stroke-opacity="0.45"/>
+</g>
+
+<g id="pinD" transform="translate(465.0 500.0)">
+  <circle r="12.5" fill="#FFFFFF"/>
+  <circle r="8" fill="#FFFFFF" stroke="#16202E" stroke-width="2.2"/>
+  <circle r="2.4" fill="#16202E"/>
+  <path d="M-16 0h32M0 -16v32" stroke="#16202E" stroke-width="0.8" stroke-opacity="0.45"/>
+</g>
+
+<g id="pinB">
+  <circle r="12.5" fill="#FFFFFF"/>
+  <circle r="8" fill="#FFFFFF" stroke="#1D5BD6" stroke-width="2.2"/>
+  <circle r="2.4" fill="#1D5BD6"/>
+  <path d="M-16 0h32M0 -16v32" stroke="#1D5BD6" stroke-width="0.8" stroke-opacity="0.45"/>
+</g>
+
+<g id="pinC">
+  <circle r="12.5" fill="#FFFFFF"/>
+  <circle r="8" fill="#FFFFFF" stroke="#16202E" stroke-width="2.2"/>
+  <circle r="2.4" fill="#16202E"/>
+  <path d="M-16 0h32M0 -16v32" stroke="#16202E" stroke-width="0.8" stroke-opacity="0.45"/>
+</g>
+
+<g id="tagA" transform="translate(145 526)">
+  <circle r="14" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.35" stroke-width="1.1"/>
+  <text text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="15" font-style="italic" fill="#41546B">A</text>
+</g>
+
+<g id="tagD" transform="translate(495 526)">
+  <circle r="14" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.35" stroke-width="1.1"/>
+  <text text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="15" font-style="italic" fill="#41546B">D</text>
+</g>
+
+<g id="tagB">
+  <circle r="14" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.35" stroke-width="1.1"/>
+  <text text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="15" font-style="italic" fill="#41546B">B</text>
+</g>
+
+<g id="tagC">
+  <circle r="14" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.35" stroke-width="1.1"/>
+  <text text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="15" font-style="italic" fill="#41546B">C</text>
+</g>
+<text id="n1" text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A">1</text><text id="n2" text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A">2</text><text id="n3" text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A">3</text><text id="n4" text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A">4</text>
+<line x1="640" y1="150" x2="894" y2="150" stroke="#254878" stroke-width="1" stroke-opacity="0.28"/>
+
+<text x="640" y="176" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#6E819A" letter-spacing="0.14em">曲柄</text>
+<text x="687" y="176" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#A9B7C7" letter-spacing="0.18em">CRANK</text>
+<text x="894" y="176" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#1D5BD6">φ</text>
+<text x="640" y="220" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="42" fill="#16202E" letter-spacing="0.01em"><tspan id="phiV">0.0</tspan><tspan font-size="19" fill="#1D5BD6" dx="3" dy="-16">°</tspan></text>
+
+<text x="640" y="276" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#6E819A" letter-spacing="0.14em">摇杆</text>
+<text x="687" y="276" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#A9B7C7" letter-spacing="0.18em">ROCKER</text>
+<text x="894" y="276" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#41546B">ψ</text>
+<text x="640" y="320" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="42" fill="#16202E" letter-spacing="0.01em"><tspan id="psiV">0.0</tspan><tspan font-size="19" fill="#41546B" dx="3" dy="-16">°</tspan></text>
+<line x1="640" y1="352" x2="880" y2="352" stroke="#254878" stroke-width="3" stroke-opacity="0.16" stroke-linecap="round"/>
+<line id="psiTrack" x1="640" y1="352" x2="880" y2="352" stroke="#1D5BD6" stroke-width="3" stroke-opacity="0.55" stroke-linecap="round"/>
+<line id="psiMark" x1="640" y1="343" x2="640" y2="361" stroke="#16202E" stroke-width="1.6"/>
+<text x="640" y="376" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11" fill="#A9B7C7">极限 C₂ · 59.5°</text>
+<text x="880" y="376" text-anchor="end" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11" fill="#A9B7C7">极限 C₁ · 133.9°</text>
+<text x="640" y="398" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11" fill="#41546B">摆角 ψ = <tspan font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" fill="#16202E">74.3°</tspan></text>
+<text x="640" y="424" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">构件长度</text>
+<text x="894" y="424" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#A9B7C7">mm</text>
+
+<line x1="640" y1="446" x2="654" y2="446" stroke="#1D5BD6" stroke-width="2.8"/>
+<text x="666" y="450" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">AB 曲柄</text>
+<text x="894" y="450" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">45</text>
+
+<line x1="640" y1="474" x2="654" y2="474" stroke="#16202E" stroke-width="2.8"/>
+<text x="666" y="478" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">BC 连杆</text>
+<text x="894" y="478" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">120</text>
+
+<line x1="640" y1="502" x2="654" y2="502" stroke="#16202E" stroke-width="2.8"/>
+<text x="666" y="506" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">CD 摇杆</text>
+<text x="894" y="506" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">90</text>
+
+<line x1="640" y1="530" x2="654" y2="530" stroke="#8794A6" stroke-width="2.8" stroke-dasharray="5 4"/>
+<text x="666" y="534" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">AD 机架</text>
+<text x="894" y="534" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">100</text>
+<line x1="640" y1="552" x2="894" y2="552" stroke="#254878" stroke-width="1" stroke-opacity="0.2"/>
+<text x="640" y="574" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" fill="#6E819A">格拉肖夫 s+l = 45+120 = 165 ≤ p+q = 190</text>
+<text x="640" y="592" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12" fill="#1D5BD6">最短杆 AB 与机架相邻 → 曲柄摇杆机构</text>
+
+<g>
+  <rect x="690" y="600" width="260" height="116" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.45" stroke-width="1.2"/>
+  <line x1="690" y1="634" x2="950" y2="634" stroke="#254878" stroke-opacity="0.35" stroke-width="1"/>
+  <line x1="690" y1="678" x2="950" y2="678" stroke="#254878" stroke-opacity="0.35" stroke-width="1"/>
+  <line x1="864" y1="634" x2="864" y2="716" stroke="#254878" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="702" y="618" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="9.5" fill="#6E819A" letter-spacing="0.22em">MECHANISM STUDY</text>
+  <text x="702" y="660" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="14" fill="#16202E" letter-spacing="0.12em">HINGED FOUR-BAR</text>
+  <text x="702" y="674" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="10.5" fill="#6E819A" letter-spacing="0.08em">平面连杆机构 · 图 3-3</text>
+  <text x="702" y="694" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="9.5" fill="#6E819A" letter-spacing="0.1em">图号</text>
+  <text x="702" y="709" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#41546B" letter-spacing="0.1em">M-03-03</text>
+  <text x="876" y="652" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="9.5" fill="#6E819A" letter-spacing="0.1em">比例</text>
+  <text x="876" y="668" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" fill="#16202E" letter-spacing="0.08em">1 : 1</text>
+</g>
+
+<text x="56" y="712" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11.5" fill="#6E819A" letter-spacing="0.12em">拖动转曲柄</text>
+<text x="144" y="712" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#A9B7C7" letter-spacing="0.1em">·</text>
+<text x="156" y="712" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A" letter-spacing="0.12em">← → 步进 · 空格暂停</text>
+    </svg>
+  </div>
+  <div class="cap"><b>曲柄摇杆机构</b>：曲柄 AB 绕 A 整周回转，经连杆 BC 推摇杆 CD 绕 D 往复摆动，机架 AD 固定。杆长 AB 45 / BC 120 / CD 90 / AD 100 mm，s+l = 45+120 = 165 ≤ p+q = 190，最短杆 AB 与机架相邻 → 曲柄摇杆；摇杆摆角 ψ = 74.3°（C₂ 59.5° ↔ C₁ 133.9°）。</div>
+</div>
+<script>
+
+const PHI0 = 2.61799388;
+const L = {"a":45,"b":120,"c":90,"d":100}, SIDE = 1;
+const S = 2.9, OX = 175, OY = 500, D2R = 0.017453292519943295, DEG = 57.29577951308232;
+function solve4(L, phiDeg, side = 1) {
+  const { a, b, c, d } = L;
+  const A = [0, 0], D = [d, 0];
+  const p = phiDeg * D2R;
+  const B = [a * Math.cos(p), a * Math.sin(p)];
+  const dx = D[0] - B[0], dy = D[1] - B[1], dist = Math.hypot(dx, dy);
+  if (dist > b + c || dist < Math.abs(b - c)) return null;      // 该 φ 无解
+  const q = (b * b - c * c + dist * dist) / (2 * dist);
+  const h = Math.sqrt(Math.max(0, b * b - q * q)) * side;
+  const ux = dx / dist, uy = dy / dist;
+  const C = [B[0] + q * ux - h * uy, B[1] + q * uy + h * ux];
+  return {
+    A, B, C, D,
+    phi: phiDeg,
+    psi: Math.atan2(C[1] - D[1], C[0] - D[0]) * DEG,           // 摇杆角（从 +x 起，逆时针为正）
+    coupler: Math.atan2(C[1] - B[1], C[0] - B[0]) * DEG        // 连杆方向
+  };
+}
+const sx = (u) => OX + u * S, sy = (w) => OY - w * S;
+const $ = (id) => document.getElementById(id);
+const el = { crankU:$("crankU"), crank:$("crank"), linkU:$("linkU"), link:$("link"), rockerU:$("rockerU"), rocker:$("rocker"),
+             pinB:$("pinB"), pinC:$("pinC"), tagB:$("tagB"), tagC:$("tagC"),
+             n1:$("n1"), n2:$("n2"), n3:$("n3"), n4:$("n4"),
+             phi:$("phiV"), psi:$("psiV"), mark:$("psiMark") };
+const PSI0 = 59.540, PSI1 = 133.872;
+const BX0 = 640, BX1 = 880, BY = 352;
+
+function seg(a, b){ const l = sy(a[1]) - sy(b[1]) === 0 ? "h" : ""; return [sx(a[0]),sy(a[1]),sx(b[0]),sy(b[1])]; }
+function setLine(id, a, b){
+  const [x1,y1,x2,y2] = [sx(a[0]), sy(a[1]), sx(b[0]), sy(b[1])];
+  for (const k of [id, id + "U"]) { const e = el[k]; e.setAttribute("x1",x1.toFixed(2)); e.setAttribute("y1",y1.toFixed(2)); e.setAttribute("x2",x2.toFixed(2)); e.setAttribute("y2",y2.toFixed(2)); }
+}
+function movePin(id, p){ el[id].setAttribute("transform", "translate(" + sx(p[0]).toFixed(2) + " " + sy(p[1]).toFixed(2) + ")"); }
+function moveTag(id, p, dx, dy){ el[id].setAttribute("transform", "translate(" + (sx(p[0])+dx).toFixed(2) + " " + (sy(p[1])+dy).toFixed(2) + ")"); }
+function mid(a, b, off){                        // 杆中点 + 屏幕法向偏移
+  const x1 = sx(a[0]), y1 = sy(a[1]), x2 = sx(b[0]), y2 = sy(b[1]);
+  const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy) || 1;
+  return [ (x1+x2)/2 - dy/len*off, (y1+y2)/2 + dx/len*off ];
+}
+function putNum(id, p){ el[id].setAttribute("x", p[0].toFixed(2)); el[id].setAttribute("y", p[1].toFixed(2)); }
+
+function draw(){
+  const s = solve4(L, phi * DEG, SIDE);
+  if (!s) return;
+  setLine("crank", s.A, s.B);
+  setLine("link",  s.B, s.C);
+  setLine("rocker",s.C, s.D);
+  movePin("pinB", s.B); movePin("pinC", s.C);
+  moveTag("tagB", s.B, -24, -16); moveTag("tagC", s.C, 24, -16);
+  putNum("n1", mid(s.A, s.B,  16));
+  putNum("n2", mid(s.B, s.C, -16));
+  putNum("n3", mid(s.C, s.D,  16));
+  putNum("n4", mid(s.A, s.D,  22));
+  const phiD = ((phi * DEG) % 360 + 360) % 360;
+  el.phi.textContent = phiD.toFixed(1);
+  el.psi.textContent = s.psi.toFixed(1);
+  const t = (s.psi - PSI0) / (PSI1 - PSI0 || 1);
+  el.mark.setAttribute("x1", (BX0 + Math.max(0, Math.min(1, t)) * (BX1 - BX0)).toFixed(2));
+  el.mark.setAttribute("x2", el.mark.getAttribute("x1"));
+}
+
+const calm = matchMedia("(prefers-reduced-motion: reduce)");
+const stage = document.querySelector("[data-stage]");
+const MIN = 0, MAX = 6.283185307179586, BOUNCE = false, STEP = 5 * Math.PI / 180;
+const clamp = (v) => Math.min(MAX, Math.max(MIN, v));
+let phi = clamp(PHI0), target = phi, touring = false, dir = 1, idleAt = performance.now(), frame = 0, last = 0, drag = null;
+function kick(){ idleAt = performance.now(); if(!frame){ last = 0; frame = requestAnimationFrame(tick); } }
+function tick(now){
+  frame = 0;
+  const dt = Math.min((now - last) / 1000, 1/30) || 0.016;
+  last = now;
+  if (touring && !drag){
+    target += dir * 0.6 * dt;
+    if (target >= MAX){ target = MAX; dir = BOUNCE ? -1 : 0; if (!BOUNCE) touring = false; }
+    else if (target <= MIN){ target = MIN; dir = BOUNCE ? 1 : 0; if (!BOUNCE) touring = false; }
+  }
+  if (!calm.matches){
+    const d = target - phi;
+    phi += Math.abs(d) < 1e-4 ? d : d * (1 - Math.exp(-dt / 0.15));
+    if (Math.abs(d) < 1e-4) phi = target;
+  } else phi = target;
+  draw();
+  if ((touring || Math.abs(target - phi) > 1e-4)) frame = requestAnimationFrame(tick);
+}
+stage.addEventListener("pointerdown", (e) => {
+  stage.setPointerCapture(e.pointerId);
+  drag = { x: e.clientX, phi: target }; touring = false; dir = 1;
+  stage.focus({ preventScroll: true }); kick();
+});
+stage.addEventListener("pointermove", (e) => {
+  if (!drag) return;
+  target = clamp(drag.phi + (e.clientX - drag.x) * 0.012);
+  phi = target; kick();
+});
+const endDrag = () => { if (!drag) return; drag = null; kick(); };
+stage.addEventListener("pointerup", endDrag);
+stage.addEventListener("pointercancel", endDrag);
+window.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight"){ target = clamp(target + STEP); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === "ArrowLeft"){ target = clamp(target - STEP); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === "Home"){ target = clamp(2.6179938779914944); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === "End"){ target = clamp(6.283185307179586); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === " "){ touring = !touring; dir = 1; kick(); e.preventDefault(); }
+});
+setInterval(() => {
+  if (calm.matches) return;
+  if (!drag && !touring && performance.now() - idleAt > 3800) { touring = true; dir = 1; kick(); }
+}, 600);
+draw();
+if (!calm.matches) frame = requestAnimationFrame(tick);
+
+
+</script>
+</body>
+</html>
