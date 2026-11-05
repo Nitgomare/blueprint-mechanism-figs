@@ -115,7 +115,7 @@ parts.push(`<line x1="${PX}" y1="552" x2="${VAL}" y2="552" stroke="${C.rule}" st
 parts.push(`<text x="${PX}" y="574" font-family="${B.FONT.mono}" font-size="12" fill="${C.dim}">格拉肖夫 s+l = ${cls.s}+${cls.l} = ${cls.sum} ≤ p+q = ${cls.pq}</text>`);
 parts.push(`<text x="${PX}" y="592" font-family="${B.FONT.zh}" font-size="12" fill="${C.accent}">最短杆 AB 与机架相邻 → 曲柄摇杆机构</text>`);
 
-parts.push(B.titleBlock({ name: "HINGED FOUR-BAR", cn: "平面连杆机构 · 图 3-3", no: "M-03-03", x: 690, y: 600, w: 260, h: 116, scale: "1 : 1" }));
+parts.push(B.titleBlock({ name: "HINGED FOUR-BAR", cn: "平面连杆机构 · 图 3-3", no: "M-03-03", scale: "1 : 1" }));
 parts.push(B.hint(56, 712, "拖动转曲柄"));
 
 const body = parts.join("\n");
