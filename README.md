@@ -91,6 +91,25 @@ B.linkLines / readout / row / driver;
 
 把整个目录放到 `<DSH_HOME>/skills/` 下（保持文件夹名 `blueprint-mechanism-figs`、保留 `SKILL.md` 顶部的 `name/description`），重开会话即可在技能列表里看到它。
 
+## 常见问题
+
+**`git push` 报 `Recv failure: Connection was reset` 或 `Failed to connect to github.com:443 over proxy`**
+
+八成是代理配置，按顺序查：
+
+```bash
+git config --get http.proxy          # 全局代理端口对不对（Clash 常见 7890 / 12000，换端口后要跟着改）
+git config --local --get http.proxy  # 关键：仓库里若有一条空的 ""，它是"显式不用代理"，会压掉全局设置
+```
+
+- 端口变了：`git config --global http.proxy http://127.0.0.1:<新端口>`（https.proxy 同理）。
+- 仓库里残留空值：`git config --local --unset http.proxy`，再 `git fetch`。
+- 只想临时绕过：`git -c http.proxy=http://127.0.0.1:<端口> push`。
+
+**确认是"网络"还是"配置"**：`curl -x http://127.0.0.1:<端口> -o /dev/null -w "%{http_code}\n" https://api.github.com`。返回 200 说明代理通，问题一定在 git 配置上。
+
+**`github.com` 连不通但 `api.github.com` 通**：可以先用 GitHub 的 Git Data API（blob → tree → commit → 更新 ref）把提交推上去应急，等网络恢复再 `git fetch && git reset --hard origin/main` 对齐。
+
 ## 反模式（真踩过的坑）
 
 | 别这么干 | 会怎样 |
