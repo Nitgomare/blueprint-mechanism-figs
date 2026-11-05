@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>图3-12 造型机的翻箱机构 · 白纸蓝图</title>
+<style>
+  :root{
+    --mono:"JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace;
+    --zh:"Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#EDEFF3;color:#16202E}
+  body{padding:28px 20px 48px;display:flex;justify-content:center}
+  .wrap{width:min(1000px,100%)}
+  .stage{position:relative;width:100%;aspect-ratio:1000/750;background:#F7F8FA;border:1px solid rgba(28,64,112,.22);border-radius:2px;overflow:hidden;cursor:grab;outline:none;user-select:none;-webkit-user-select:none;touch-action:pan-y;box-shadow:0 1px 2px rgba(20,40,70,.06),0 12px 28px -18px rgba(20,40,70,.35)}
+  .stage:active{cursor:grabbing}
+  .stage:focus:not(:focus-visible){box-shadow:none}
+  .stage:focus-visible{box-shadow:inset 0 0 0 1.5px rgba(29,91,214,.6)}
+  .stage svg{display:block;width:100%;height:100%}
+  #crank,#link,#rocker,#rod{filter:drop-shadow(0 1px 1.2px rgba(20,40,70,.18))}
+  .cap{margin-top:13px;font-family:var(--zh);font-size:13px;line-height:1.75;color:#5A6B80;letter-spacing:.01em}
+  .cap b{color:#16202E;font-weight:600}
+  @media (max-width:720px){
+    body{padding:14px 10px 26px}
+    .cap{font-size:12px;line-height:1.65}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="stage" data-stage tabindex="0" role="slider" aria-label="图3-12 造型机的翻箱机构 · 白纸蓝图：拖动或方向键转动曲柄" aria-valuemin="0" aria-valuemax="360" aria-valuenow="150">
+    <svg viewBox="0 0 1000 750" role="img" aria-label="图3-12 造型机的翻箱机构 · 白纸蓝图">
+      
+<defs>
+  <pattern id="gm" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#254878" stroke-opacity="0.075" stroke-width="1"/>
+  </pattern>
+  <pattern id="gM" width="200" height="200" patternUnits="userSpaceOnUse">
+    <rect width="200" height="200" fill="url(#gm)"/>
+    <path d="M200 0H0V200" fill="none" stroke="#254878" stroke-opacity="0.15" stroke-width="1.1"/>
+  </pattern>
+</defs>
+<rect width="1000" height="750" fill="#F7F8FA"/>
+<rect width="1000" height="750" fill="url(#gM)"/>
+<rect x="16" y="16" width="968" height="718" fill="none" stroke="#254878" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="23" y="23" width="954" height="704" fill="none" stroke="#254878" stroke-opacity="0.28" stroke-width="1"/>
+<path d="M16 52h9M16 698h9M975 52h9M975 698h9" stroke="#254878" stroke-opacity="0.5" stroke-width="1.1"/>
+<path d="M52 16v9M948 16v9M52 734v-9M948 734v-9" stroke="#254878" stroke-opacity="0.5" stroke-width="1.1"/>
+<text x="56" y="52" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A" letter-spacing="0.24em">FIG. 3-12</text>
+<text x="56" y="88" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="26" font-weight="600" fill="#16202E" letter-spacing="0.06em">造型机的翻箱机构</text>
+<text x="56" y="111" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#6E819A" letter-spacing="0.2em">FLASK TIPPING · 双摇杆</text>
+<text x="944" y="52" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A" letter-spacing="0.24em">REV. A · 1 : 1</text><path d="M273 531L339 531M273.0 531L266.0 540M284.0 531L277.0 540M295.0 531L288.0 540M306.0 531L299.0 540M317.0 531L310.0 540M328.0 531L321.0 540M339.0 531L332.0 540M420.5 531L486.5 531M420.5 531L413.5 540M431.5 531L424.5 540M442.5 531L435.5 540M453.5 531L446.5 540M464.5 531L457.5 540M475.5 531L468.5 540M486.5 531L479.5 540" fill="none" stroke="#A9B7C7" stroke-width="1.1" stroke-linecap="round"/>
+<g>
+  <path d="M292 530 L306 527 L320 530" stroke="#16202E" stroke-width="1.7" fill="none" stroke-opacity="0.8"/>
+  <path d="M294 532 L306 563 L318 532 Z" fill="#16202E" fill-opacity="0.06" stroke="#16202E" stroke-width="1.4" stroke-opacity="0.75"/>
+  <line x1="286" y1="563" x2="326" y2="563" stroke="#16202E" stroke-width="1.5" stroke-opacity="0.75"/>
+  <line x1="289" y1="563" x2="284" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="298" y1="563" x2="293" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="307" y1="563" x2="302" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="316" y1="563" x2="311" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="325" y1="563" x2="320" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/>
+</g>
+<g>
+  <path d="M439.5 530 L453.5 527 L467.5 530" stroke="#16202E" stroke-width="1.7" fill="none" stroke-opacity="0.8"/>
+  <path d="M441.5 532 L453.5 563 L465.5 532 Z" fill="#16202E" fill-opacity="0.06" stroke="#16202E" stroke-width="1.4" stroke-opacity="0.75"/>
+  <line x1="433.5" y1="563" x2="473.5" y2="563" stroke="#16202E" stroke-width="1.5" stroke-opacity="0.75"/>
+  <line x1="436.5" y1="563" x2="431.5" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="445.5" y1="563" x2="440.5" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="454.5" y1="563" x2="449.5" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="463.5" y1="563" x2="458.5" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/><line x1="472.5" y1="563" x2="467.5" y2="572" stroke="#16202E" stroke-width="1.1" stroke-opacity="0.5"/>
+</g><line x1="306" y1="515" x2="453.5" y2="515" stroke="#8794A6" stroke-width="2.2" stroke-dasharray="7 5" stroke-linecap="round"/><path d="M102.00 349.80L103.94 347.44L105.90 345.10L107.89 342.78L109.91 340.49L111.95 338.22L114.02 335.98L116.12 333.75L118.24 331.56L120.38 329.38L122.56 327.24L124.75 325.12L126.98 323.02L129.22 320.95L131.49 318.91L133.78 316.89L136.10 314.90L138.44 312.94L140.80 311.00L143.19 309.09L145.60 307.21L148.02 305.36L150.47 303.53L152.94 301.74L155.44 299.97L157.95 298.24L160.48 296.53L163.03 294.85L165.60 293.20L168.19 291.58L170.80 289.99L173.43 288.44L176.07 286.91L178.74 285.41L181.42 283.95L184.11 282.51L186.83 281.11L189.56 279.74L192.30 278.40L195.06 277.09L197.84 275.82L200.63 274.58L203.43 273.37L206.25 272.19L209.08 271.05L211.93 269.94L214.79 268.86L217.66 267.81L220.54 266.80L223.43 265.82L226.34 264.88L229.25 263.97L232.18 263.09L235.11 262.25L238.06 261.44L241.01 260.67L243.98 259.93L246.95 259.23L249.93 258.56L252.92 257.92L255.91 257.32L258.91 256.76L261.92 256.23L264.94 255.73L267.96 255.27L270.98 254.85L274.01 254.46L277.04 254.10L280.08 253.78L283.12 253.50L286.17 253.25L289.21 253.04L292.26 252.86L295.31 252.72L298.37 252.61L301.42 252.54L304.47 252.50L307.53 252.50L310.58 252.54L313.63 252.61L316.69 252.72L319.74 252.86L322.79 253.04L325.83 253.25L328.88 253.50L331.92 253.78L334.96 254.10L337.99 254.46L341.02 254.85L344.04 255.27L347.06 255.73" fill="none" stroke="#6E819A" stroke-width="1.4" stroke-dasharray="10 3 2 3"/><path d="M100.56 432.29L101.13 429.89L101.72 427.50L102.33 425.10L102.95 422.70L103.59 420.30L104.25 417.89L104.93 415.49L105.62 413.09L106.34 410.68L107.07 408.27L107.82 405.86L108.59 403.45L109.38 401.03L110.19 398.61L111.02 396.19L111.88 393.76L112.75 391.33L113.64 388.90L114.55 386.46L115.49 384.02L116.45 381.58L117.43 379.13L118.43 376.67L119.46 374.21L120.51 371.75L121.58 369.28L122.68 366.80L123.80 364.32L124.95 361.84L126.12 359.35L127.32 356.85L128.55 354.34L129.80 351.83L131.08 349.31L132.39 346.79L133.73 344.25L135.10 341.71L136.50 339.17L137.93 336.61L139.39 334.05L140.89 331.48L142.42 328.90L143.98 326.31L145.58 323.71L147.21 321.10L148.89 318.49L150.59 315.86L152.34 313.23L154.13 310.59L155.96 307.93L157.83 305.27L159.75 302.59L161.71 299.91L163.72 297.21L165.77 294.50L167.88 291.79L170.03 289.05L172.24 286.31L174.50 283.56L176.82 280.79L179.20 278.01L181.64 275.22L184.14 272.41L186.71 269.59L189.34 266.75L192.05 263.90L194.83 261.03L197.70 258.15L200.64 255.25L203.67 252.34L206.79 249.40L210.01 246.45L213.33 243.48L216.76 240.48L220.31 237.46L223.98 234.42L227.79 231.35L231.74 228.24L235.85 225.11L240.14 221.94L244.63 218.72L249.34 215.46L254.31 212.13L259.58 208.73L265.22 205.23L271.31 201.61L278.01 197.81L285.61 193.72L294.78 189.09L308.91 182.58" fill="none" stroke="#6E819A" stroke-width="1.4" stroke-dasharray="10 3 2 3"/><path id="ghostBox" d="M324.86 167.22L291.33 102.94L283.57 106.98L276.63 93.68L254.47 105.24L261.41 118.54L253.65 122.59L287.18 186.87Z" fill="none" stroke="#A9B7C7" stroke-width="1.2" stroke-dasharray="5 5"/><line x1="347.06404707306064" y1="255.73181059377634" x2="308.9093805565016" y2="182.58489389177055"
+  stroke="#A9B7C7" stroke-width="1.2" stroke-dasharray="5 5"/><text x="363.1" y="269.7" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" font-style="italic" fill="#A9B7C7">B′</text><text x="324.9" y="176.6" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" font-style="italic" fill="#A9B7C7">C′</text>
+<line id="crankU" x1="0" y1="0" x2="0" y2="0" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+<line id="crank" x1="0" y1="0" x2="0" y2="0" stroke="#1D5BD6" stroke-width="6.5" stroke-linecap="round"/>
+<line id="linkU" x1="0" y1="0" x2="0" y2="0" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+<line id="link" x1="0" y1="0" x2="0" y2="0" stroke="#16202E" stroke-width="6.5" stroke-linecap="round"/>
+<line id="rockerU" x1="0" y1="0" x2="0" y2="0" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+<line id="rocker" x1="0" y1="0" x2="0" y2="0" stroke="#16202E" stroke-width="6.5" stroke-linecap="round"/><path id="box" d="M79.21 438.17L77.94 510.66L86.69 510.81L86.43 525.81L111.43 526.24L111.69 511.25L120.44 511.40L121.70 438.91Z" fill="#FFFFFF" stroke="#16202E" stroke-width="2" stroke-linejoin="round"/><path id="boxIn" d="M0 0" fill="none" stroke="#41546B" stroke-width="1.2"/><text id="boxTag" text-anchor="middle" dominant-baseline="central" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="9.5" fill="#6E819A" letter-spacing="0.08em">砂箱</text>
+<g id="pinA" transform="translate(306.0 515.0)">
+  <circle r="13.5" fill="#FFFFFF"/>
+  <circle r="9" fill="#FFFFFF" stroke="#16202E" stroke-width="2.2"/>
+  <circle r="2.7" fill="#16202E"/>
+  <path d="M-17 0h34M0 -17v34" stroke="#16202E" stroke-width="0.8" stroke-opacity="0.45"/>
+</g>
+<g id="pinD" transform="translate(453.5 515.0)">
+  <circle r="13.5" fill="#FFFFFF"/>
+  <circle r="9" fill="#FFFFFF" stroke="#16202E" stroke-width="2.2"/>
+  <circle r="2.7" fill="#16202E"/>
+  <path d="M-17 0h34M0 -17v34" stroke="#16202E" stroke-width="0.8" stroke-opacity="0.45"/>
+</g>
+<g id="pinB">
+  <circle r="13.5" fill="#FFFFFF"/>
+  <circle r="9" fill="#FFFFFF" stroke="#16202E" stroke-width="2.2"/>
+  <circle r="2.7" fill="#16202E"/>
+  <path d="M-17 0h34M0 -17v34" stroke="#16202E" stroke-width="0.8" stroke-opacity="0.45"/>
+</g>
+<g id="pinC">
+  <circle r="13.5" fill="#FFFFFF"/>
+  <circle r="9" fill="#FFFFFF" stroke="#16202E" stroke-width="2.2"/>
+  <circle r="2.7" fill="#16202E"/>
+  <path d="M-17 0h34M0 -17v34" stroke="#16202E" stroke-width="0.8" stroke-opacity="0.45"/>
+</g><text x="272.0" y="565.0" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" font-style="italic" fill="#41546B">A</text><text x="475.5" y="565.0" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" font-style="italic" fill="#41546B">D</text>
+<g id="tagB" transform="translate(-20 -12)">
+  <circle r="14" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.35" stroke-width="1.1"/>
+  <text text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="15" font-style="italic" fill="#41546B">B</text>
+</g>
+<g id="tagC" transform="translate(-22 14)">
+  <circle r="14" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.35" stroke-width="1.1"/>
+  <text text-anchor="middle" dominant-baseline="central" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="15" font-style="italic" fill="#41546B">C</text>
+</g><text id="n1" text-anchor="middle" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" fill="#6E819A">1</text><text id="n2" text-anchor="middle" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" fill="#6E819A">2</text><text id="n3" text-anchor="middle" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" fill="#6E819A">3</text><line x1="690" y1="150" x2="944" y2="150" stroke="#A9B7C7" stroke-width="1"/>
+<text x="690" y="186" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#6E819A" letter-spacing="0.14em">连杆转角</text>
+<text x="764" y="186" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#A9B7C7" letter-spacing="0.18em">COUPLER</text>
+<text x="944" y="186" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#1D5BD6">θ</text>
+<text x="690" y="230" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="42" fill="#16202E" letter-spacing="0.01em"><tspan id="thetaV">0.0</tspan><tspan font-size="19" fill="#1D5BD6" dx="3" dy="-16">°</tspan></text>
+<text x="690" y="276" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#6E819A" letter-spacing="0.14em">输入摇杆角</text>
+<text x="777.5" y="276" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#A9B7C7" letter-spacing="0.18em">ROCKER AB</text>
+<text x="944" y="276" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#1D5BD6">α</text>
+<text x="690" y="320" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="42" fill="#16202E" letter-spacing="0.01em"><tspan id="alphaV">0.0</tspan><tspan font-size="19" fill="#1D5BD6" dx="3" dy="-16">°</tspan></text><line x1="690" y1="350" x2="944" y2="350" stroke="#A9B7C7" stroke-width="1"/><text x="690" y="374" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12" fill="#6E819A">翻转进度</text><text x="944" y="374" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" fill="#6E819A"><tspan id="progV">0</tspan>%</text><line id="progBg" x1="690" y1="390" x2="944" y2="390" stroke="#A9B7C7" stroke-width="4" stroke-linecap="round"/><line id="prog" x1="690" y1="390" x2="690" y2="390" stroke="#1D5BD6" stroke-width="4" stroke-linecap="round"/><text x="690" y="412" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11.5" fill="#6E819A">上料位 · φ 141°</text><text x="944" y="412" text-anchor="end" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11.5" fill="#6E819A">翻到位 · φ 81°</text><text x="690" y="440" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12" fill="#41546B">构件长度</text><text x="944" y="440" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="10" fill="#6E819A">mm</text>
+<line x1="690" y1="458" x2="704" y2="458" stroke="#1D5BD6" stroke-width="2.8"/>
+<text x="716" y="462" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">AB 输入摇杆</text>
+<text x="944" y="462" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">210</text>
+<line x1="690" y1="482" x2="704" y2="482" stroke="#16202E" stroke-width="2.8"/>
+<text x="716" y="486" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">BC 连杆（砂箱在其上）</text>
+<text x="944" y="486" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">66</text>
+<line x1="690" y1="506" x2="704" y2="506" stroke="#16202E" stroke-width="2.8"/>
+<text x="716" y="510" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">CD 输出摇杆</text>
+<text x="944" y="510" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">290</text>
+<line x1="690" y1="530" x2="704" y2="530" stroke="null" stroke-width="2.8" stroke-dasharray="5 4"/>
+<text x="716" y="534" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="12.5" fill="#41546B">AD 机架</text>
+<text x="944" y="534" text-anchor="end" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="13" fill="#16202E">118</text><text x="690" y="566" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11.5" fill="#41546B">s+l = 66+290 = 356 &gt; p+q = 210+118 = 328</text><text x="690" y="584" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11.5" fill="#1D5BD6">→ 双摇杆机构（非格拉肖夫）</text>
+<g>
+  <rect x="705" y="599" width="260" height="116" fill="#FFFFFF" stroke="#254878" stroke-opacity="0.45" stroke-width="1.2"/>
+  <line x1="705" y1="633" x2="965" y2="633" stroke="#254878" stroke-opacity="0.35" stroke-width="1"/>
+  <line x1="705" y1="677" x2="965" y2="677" stroke="#254878" stroke-opacity="0.35" stroke-width="1"/>
+  <line x1="879" y1="633" x2="879" y2="715" stroke="#254878" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="717" y="617" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="9.5" fill="#6E819A" letter-spacing="0.22em">MECHANISM STUDY</text>
+  <text x="717" y="659" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="14" fill="#16202E" letter-spacing="0.12em">FLASK TIPPER</text>
+  <text x="717" y="673" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="10.5" fill="#6E819A" letter-spacing="0.08em">翻箱机构 · 图 3-12</text>
+  <text x="717" y="693" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="9.5" fill="#6E819A" letter-spacing="0.1em">图号</text>
+  <text x="717" y="708" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11" fill="#41546B" letter-spacing="0.1em">M-03-12</text>
+  <text x="891" y="651" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="9.5" fill="#6E819A" letter-spacing="0.1em">比例</text>
+  <text x="891" y="667" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="12" fill="#16202E" letter-spacing="0.08em">1 : 1</text>
+</g>
+<text x="56" y="712" font-family=""Microsoft YaHei","Noto Sans SC","PingFang SC",sans-serif" font-size="11.5" fill="#6E819A" letter-spacing="0.12em">拖动翻转砂箱</text>
+<text x="144" y="712" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#A9B7C7" letter-spacing="0.1em">·</text>
+<text x="156" y="712" font-family=""JetBrains Mono","Cascadia Mono",Consolas,"Roboto Mono",monospace" font-size="11.5" fill="#6E819A" letter-spacing="0.12em">← → 步进 · 空格暂停</text><style>#box,#boxIn,#boxTag{transition:none}</style>
+    </svg>
+  </div>
+  <div class="cap">造型机的翻箱机构：双摇杆机构 ABCD，杆长按教材原图比例量取 AB 210、BC 66、CD 290、AD 118（s+l = 356 > p+q = 328，不满足格拉肖夫条件）。砂箱固定在连杆 BC 上：先在 BC 位置造型振实，再由摇杆 AB 摆过 60° 带动连杆把砂箱送到 B′C′ 位置以便拔模。图中点划线是铰点 B、C 的轨迹，虚线是砂箱的终点位置。<b>按四杆位形实测</b>，这段运动里连杆转过约 149°（不是严格的 180°）——教材所说的「翻转 180°」是指砂箱被整个翻过来、顶面朝下以便拔模，绘图时按 180° 示意。</div>
+</div>
+<script>
+
+const $ = (id) => document.getElementById(id);
+const L = {"a":210,"b":66,"c":290,"d":118};
+const P0 = 141 * Math.PI / 180, P1 = 81 * Math.PI / 180;
+const PHI0 = P0;
+const S = 1.25, OX = 306, OY = 515;
+const sx = (u) => OX + u * S, sy = (w) => OY - w * S;
+const FLASK = {"len":58,"wid":34,"fin":12,"finW":20,"gap":5};
+
+function solve4(L, phiDeg, side) {
+  const { a, b, c, d } = L, R = Math.PI / 180;
+  const p = phiDeg * R;
+  const B = [a * Math.cos(p), a * Math.sin(p)], D = [d, 0];
+  const dx = D[0] - B[0], dy = D[1] - B[1], dist = Math.hypot(dx, dy);
+  if (dist > b + c || dist < Math.abs(b - c)) return null;
+  const q = (b * b - c * c + dist * dist) / (2 * dist);
+  const h = Math.sqrt(Math.max(0, b * b - q * q)) * side;
+  const ux = dx / dist, uy = dy / dist;
+  const C = [B[0] + q * ux - h * uy, B[1] + q * uy + h * ux];
+  return { A: [0, 0], B, C, D, coupler: Math.atan2(C[1] - B[1], C[0] - B[0]) * 180 / Math.PI };
+}
+function boxOf(s) {
+  const ux = (s.C[0] - s.B[0]) / L.b, uy = (s.C[1] - s.B[1]) / L.b;
+  const nx = -uy, ny = ux;
+  const o = [s.C[0] + ux * FLASK.gap, s.C[1] + uy * FLASK.gap];
+  const P = (e, m) => [o[0] + ux * e + nx * m, o[1] + uy * e + ny * m];
+  const hl = FLASK.len, hw = FLASK.wid / 2, fw = FLASK.finW / 2;
+  return [P(0,-hw), P(hl,-hw), P(hl,-fw), P(hl+FLASK.fin,-fw), P(hl+FLASK.fin,fw), P(hl,fw), P(hl,hw), P(0,hw)];
+}
+const poly = (pts) => pts.map((p,i)=> (i?"L":"M") + sx(p[0]).toFixed(2) + " " + sy(p[1]).toFixed(2)).join("") + "Z";
+const un = (x) => { while (x > 180) x -= 360; while (x <= -180) x += 360; return x; };
+
+const el = {
+  crank:$("crank"), link:$("link"), rock:$("rocker"),
+  box:$("box"), boxIn:$("boxIn"), boxTag:$("boxTag"),
+  pinB:$("pinB"), pinC:$("pinC"), tagB:$("tagB"), tagC:$("tagC"),
+  tagB2:$("tagB2"), tagC2:$("tagC2"),
+  theta:$("thetaV"), alpha:$("alphaV"), prog:$("prog"), progV:$("progV"),
+  n1:$("n1"), n2:$("n2"), n3:$("n3")
+};
+const setLine = (id, p, q) => {
+  const L1 = el[id], U = el[id + "U"];
+  L1.setAttribute("x1", sx(p[0]).toFixed(2)); L1.setAttribute("y1", sy(p[1]).toFixed(2));
+  L1.setAttribute("x2", sx(q[0]).toFixed(2)); L1.setAttribute("y2", sy(q[1]).toFixed(2));
+  if (U) { U.setAttribute("x1", L1.getAttribute("x1")); U.setAttribute("y1", L1.getAttribute("y1"));
+           U.setAttribute("x2", L1.getAttribute("x2")); U.setAttribute("y2", L1.getAttribute("y2")); }
+};
+const movePin = (id, p) => el[id].setAttribute("transform", "translate(" + sx(p[0]).toFixed(2) + " " + sy(p[1]).toFixed(2) + ")");
+const moveTag = (id, p, dx, dy) => el[id].setAttribute("transform",
+  "translate(" + (sx(p[0]) + dx).toFixed(2) + " " + (sy(p[1]) + dy).toFixed(2) + ")");
+
+let start = null;
+function draw() {
+  const ph = phi * 180 / Math.PI;
+  const s = solve4(L, ph, -1);
+  if (!s) return "";
+  if (!start) start = s.coupler;
+  setLine("crank", s.A, s.B); setLine("link", s.B, s.C); setLine("rock", s.C, s.D);
+  movePin("pinB", s.B); movePin("pinC", s.C);
+  moveTag("tagB", s.B, -20, -10); moveTag("tagC", s.C, -44, 6);
+  el.box.setAttribute("d", poly(boxOf(s)));
+  const bx = boxOf(s);
+  const cx = bx.reduce((a, p) => a + p[0], 0) / bx.length, cy = bx.reduce((a, p) => a + p[1], 0) / bx.length;
+  el.boxIn.setAttribute("d", poly(bx.map(p => [p[0] + (cx - p[0]) * 0.16, p[1] + (cy - p[1]) * 0.16])));
+  el.boxTag.setAttribute("x", sx(cx).toFixed(2)); el.boxTag.setAttribute("y", sy(cy).toFixed(2));
+  const tilt = Math.abs(un(s.coupler - start));
+  el.theta.textContent = tilt.toFixed(0);
+  el.alpha.textContent = ph.toFixed(0);
+  const prog = (P0 - phi) / (P0 - P1);
+  el.progV.textContent = Math.round(prog * 100);
+  el.prog.setAttribute("x2", (690 + 254 * prog).toFixed(1));
+  el.n1.setAttribute("x", sx((s.A[0] + s.B[0]) / 2).toFixed(1)); el.n1.setAttribute("y", sy((s.A[1] + s.B[1]) / 2).toFixed(1));
+  el.n2.setAttribute("x", sx((s.B[0] + s.C[0]) / 2 - 12).toFixed(1)); el.n2.setAttribute("y", sy((s.B[1] + s.C[1]) / 2).toFixed(1));
+  el.n3.setAttribute("x", sx((s.C[0] + s.D[0]) / 2).toFixed(1)); el.n3.setAttribute("y", sy((s.C[1] + s.D[1]) / 2).toFixed(1));
+  return "连杆 " + tilt.toFixed(0) + "° · 摇杆 " + ph.toFixed(0) + "°";
+}
+
+const calm = matchMedia("(prefers-reduced-motion: reduce)");
+const stage = document.querySelector("[data-stage]");
+const MIN = 1.413716694115407, MAX = 2.4609142453120048, BOUNCE = true, STEP = 0.029088820866572156;
+const clamp = (v) => Math.min(MAX, Math.max(MIN, v));
+let phi = clamp(PHI0), target = phi, touring = false, dir = 1, idleAt = performance.now(), frame = 0, last = 0, drag = null;
+function kick(){ idleAt = performance.now(); if(!frame){ last = 0; frame = requestAnimationFrame(tick); } }
+function tick(now){
+  frame = 0;
+  const dt = Math.min((now - last) / 1000, 1/30) || 0.016;
+  last = now;
+  if (touring && !drag){
+    target += dir * 0.35 * dt;
+    if (target >= MAX){ target = MAX; dir = BOUNCE ? -1 : 0; if (!BOUNCE) touring = false; }
+    else if (target <= MIN){ target = MIN; dir = BOUNCE ? 1 : 0; if (!BOUNCE) touring = false; }
+  }
+  if (!calm.matches){
+    const d = target - phi;
+    phi += Math.abs(d) < 1e-4 ? d : d * (1 - Math.exp(-dt / 0.15));
+    if (Math.abs(d) < 1e-4) phi = target;
+  } else phi = target;
+  draw();
+  if ((touring || Math.abs(target - phi) > 1e-4)) frame = requestAnimationFrame(tick);
+}
+stage.addEventListener("pointerdown", (e) => {
+  stage.setPointerCapture(e.pointerId);
+  drag = { x: e.clientX, phi: target }; touring = false; dir = 1;
+  stage.focus({ preventScroll: true }); kick();
+});
+stage.addEventListener("pointermove", (e) => {
+  if (!drag) return;
+  target = clamp(drag.phi + (e.clientX - drag.x) * 0.006);
+  phi = target; kick();
+});
+const endDrag = () => { if (!drag) return; drag = null; kick(); };
+stage.addEventListener("pointerup", endDrag);
+stage.addEventListener("pointercancel", endDrag);
+window.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight"){ target = clamp(target + STEP); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === "ArrowLeft"){ target = clamp(target - STEP); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === "Home"){ target = clamp(2.4609142453120048); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === "End"){ target = clamp(1.413716694115407); touring = false; dir = 1; kick(); e.preventDefault(); }
+  else if (e.key === " "){ touring = !touring; dir = 1; kick(); e.preventDefault(); }
+});
+setInterval(() => {
+  if (calm.matches) return;
+  if (!drag && !touring && performance.now() - idleAt > 3800) { touring = true; dir = 1; kick(); }
+}, 600);
+draw();
+if (!calm.matches) frame = requestAnimationFrame(tick);
+
+</script>
+</body>
+</html>

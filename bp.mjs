@@ -44,7 +44,8 @@ export const header = ({ fig, title, sub, right, w = 1000 }) => `
 <text x="56" y="111" font-family="${FONT.mono}" font-size="11" fill="${C.dim}" letter-spacing="0.2em">${sub}</text>
 <text x="${w - 56}" y="52" text-anchor="end" font-family="${FONT.mono}" font-size="11.5" fill="${C.dim}" letter-spacing="0.24em">${right}</text>`;
 
-export const titleBlock = ({ x = 690, y = 606, w = 260, h = 116, kicker = "MECHANISM STUDY", name, cn, no, scale = "1 : 1" }) => `
+/* 标题栏：默认右下角贴内框（内框 23，留 12），固定 260×116 —— 内部文字排到 y+109，压高度会溢出 */
+export const titleBlock = ({ W = 1000, H = 750, x = W - 23 - 12 - 260, y = H - 23 - 12 - 116, w = 260, h = 116, kicker = "MECHANISM STUDY", name, cn, no, scale = "1 : 1" }) => `
 <g>
   <rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${C.paper2}" stroke="${C.rule}" stroke-opacity="0.45" stroke-width="1.2"/>
   <line x1="${x}" y1="${y + 34}" x2="${x + w}" y2="${y + 34}" stroke="${C.rule}" stroke-opacity="0.35" stroke-width="1"/>

@@ -11,6 +11,8 @@
 |---|---|
 | ![3-6](docs/fig-3-6.png) | ![3-12](docs/fig-3-12.png) |
 
+> 图 3-12 是**原图对齐**的样例：杆长从教材原图（`mechanism-principles-4e` 的 `docs/images/…jpg`）量点折算，AB 210 / BC 66 / CD 290 / AD 118，`s+l = 356 > p+q = 328` → 双摇杆；教材写「翻转 180°」，按这套杆长实算两个所示位形之间连杆转过 **149°**，差异写进了图注（见 SKILL §3.3）。
+
 ---
 
 ## 它解决什么问题
@@ -61,6 +63,7 @@ bp.mjs                版式库：网格、双线图框、标题栏、销钉、�
 mech.mjs              求解器：classify / solve4 / poseByCoupler / sweep4 / rigidCheck
 check.mjs             命令行体检（exit 1 = 不合格）
 example-fig-3-3.mjs   完整可跑的样例（曲柄摇杆）
+example-fig-3-12.mjs  原图对齐样例（教材图 3-12 翻箱机构，杆长由原图量点折算）
 ```
 
 ### API 速查
